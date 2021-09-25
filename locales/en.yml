@@ -6,9 +6,12 @@ button:
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
+  slogan: Helping You Start Life in Seoul
   desc: Opinionated Vite Starter Template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
   aka: Also known as
   whats-your-name: What's your name?
+  Seoul: Seoul
+  sign up: Sign up
 not-found: Not found

@@ -1,8 +1,21 @@
 @import './markdown.css';
+/* debugger */
+[debug], [debug] *:not(g):not(path) {
+	color:                 yellow !important;
+	background:            navy !important;
+	outline: 			solid 0.25rem dodgerblue !important;
+	box-shadow: none !important;
+	filter:     none !important;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html,
 body,
-#app {
+#app, main {
   height: 100%;
   margin: 0;
   padding: 0;

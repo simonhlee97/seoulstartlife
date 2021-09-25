@@ -3,9 +3,9 @@
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
-  title: 'Vitesse',
+  title: 'SeoulStartLife',
   meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
+    { name: 'description', content: 'Helping You Start Life in Seoul' },
   ],
 })
 </script>
@@ -13,3 +13,11 @@ useHead({
 <template>
   <router-view />
 </template>
+
+<style>
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+</style>

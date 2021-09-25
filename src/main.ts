@@ -4,6 +4,10 @@ import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
 
+// testing
+import { supabase } from './lib/supabase'
+import { userSession } from './vuetils/useAuth'
+
 // windicss layers
 import 'virtual:windi-base.css'
 import 'virtual:windi-components.css'
@@ -25,3 +29,10 @@ export const createApp = ViteSSG(
     Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))
   },
 )
+
+/**
+ * Keeps track of if the user is logged in or out and will update userSession state accordingly.
+ */
+supabase.auth.onAuthStateChange((event, session) => {
+  userSession.value = session
+})
